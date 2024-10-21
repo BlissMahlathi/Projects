@@ -38,6 +38,7 @@ const Contact = () => {
   return (
     <div className="flex justify-center items-center mt-5">
       <form onSubmit={sendEmail} className="text-slate-300">
+      <p>Comming Soon*</p>
         <h1 className="text-3xl text-center font-bold text-slate-300 mb-4">Contact Me</h1>
 
         <label htmlFor="name">Name*</label><br/>

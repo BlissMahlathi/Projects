@@ -21,14 +21,14 @@ const About = () => {
         React,Djongo, Express, Node.js, Python, C++, Next.js and database systems like MySQL and MongoDB. I&apos;ve worked with startups, 
         individual clients, and growing businesses, delivering custom solutions that drive growth.
         <br/><br/>
-        Outside of coding, I’m passionate about learning new things, playing bass guitar, and enjoying 
-        video games. Whether it’s jamming out some tunes or exploring new strategies in my favorite 
+        Outside of coding, I&apos;m passionate about learning new things, playing bass guitar, and enjoying 
+        video games. Whether it&apos;s jamming out some tunes or exploring new strategies in my favorite 
         games, these hobbies help keep my creativity flowing.
         </p>
         </div>
         <div 
           className="border max-md:hidden flex justify-center items-center 
-                    absolute left-[80rem] top-[8%]  border-1 rounded-[50%]  w-[45%] h-[80%] -z-10">
+                    absolute left-[80rem] lg:left-[68rem] top-[8%]  border-1 rounded-[50%]  w-[45%] h-[80%] -z-10">
           <div className="border flex justify-center items-center  border-1 overflow-x-hidden rounded-[50%] w-[80%] h-[80%] -z-10" >
               <div className="border border-1 rounded-[50%] w-[70%] h-[70%] overflow-x-hidden -z-10">
 

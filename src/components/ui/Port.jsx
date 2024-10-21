@@ -1,57 +1,59 @@
 import { cn } from "../../../lib/utils";
 
-
 export function FeaturesSection() {
   const features = [
     {
-      title: "Built for developers",
+      title: "Landing Page Design",
       description:
-        "Built for engineers, developers, dreamers, thinkers and doers.",
-      
+        "A sleek and modern landing page built for innovators. Fast, responsive, and optimized for user engagement.",
+      status: "Complete",
     },
     {
-      title: "Ease of use",
+      title: "Temperature Converter",
       description:
-        "It's as easy as using an Apple, and as expensive as buying one.",
-      
+        "An intuitive tool for converting temperatures between Celsius and Fahrenheit. Functional and user-friendly.",
+      status: "Complete",
     },
     {
-      title: "Pricing like no other",
+      title: "Portfolio Showcase",
       description:
-        "Our prices are best in the market. No cap, no lock, no credit card required.",
-      
+        "A professional portfolio highlighting web and software development expertise. Responsive design and smooth navigation built with HTML, CSS, and JavaScript.",
+      status: "Complete",
     },
     {
-      title: "100% Uptime guarantee",
-      description: "We just cannot be taken down by anyone.",
-      
-    },
-    {
-      title: "Multi-tenant Architecture",
-      description: "You can simply share passwords instead of buying new seats",
-      
-    },
-    {
-      title: "24/7 Customer Support",
+      title: "Dynamic E-Commerce Platform",
       description:
-        "We are available a 100% of the time. Atleast our AI Agents are.",
-      
+        "A robust full-stack e-commerce solution using React.js and Node.js. Featuring secure payment gateways and seamless product management.",
+      status: "In Progress",
     },
     {
-      title: "Money back guarantee",
+      title: "Mobile Banking App",
       description:
-        "If you donot like EveryAI, we will convince you to like us.",
-      
+        "A secure mobile banking app developed with React Native. Features include real-time transaction tracking and personalized notifications.",
+      status: "In Progress",
     },
     {
-      title: "And everything else",
-      description: "I just ran out of copy ideas. Accept my sincere apologies",
-      
+      title: "Task Management Tool",
+      description:
+        "A collaborative task management web app for teams. Real-time updates, notifications, and a user-friendly interface built with React.js and Firebase.",
+      status: "In Progress",
+    },
+    {
+      title: "YouTube Video Downloader",
+      description:
+        "A powerful Python-based tool to download videos directly from YouTube with ease and efficiency.",
+      status: "Complete",
+    },
+    {
+      title: "Smart Calculator",
+      description:
+        "An advanced calculator application to perform everyday calculations. Quick, reliable, and easy to use.",
+      status: "Complete",
     },
   ];
   return (
     (<div
-      className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10 py-10 max-w-7xl mx-auto">
+      className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 relative z-10 py-10 max-w-7xl mx-auto">
       {features.map((feature, index) => (
         <Feature key={feature.title} {...feature} index={index} />
       ))}
@@ -62,12 +64,13 @@ export function FeaturesSection() {
 const Feature = ({
   title,
   description,
-  index
+  index,
+  status
 }) => {
   return (
     (<div id="portfolio"
       className={cn(
-        "flex flex-col lg:border-r  py-10 relative group/feature dark:border-neutral-800",
+        "flex flex-col lg:border-r py-10 relative group/feature dark:border-neutral-800",
         (index === 0 || index === 4) && "lg:border-l dark:border-neutral-800",
         index < 4 && "lg:border-b dark:border-neutral-800"
       )}>
@@ -81,7 +84,6 @@ const Feature = ({
       )}
       <div
         className="mb-4 relative z-10 px-10 text-neutral-600 dark:text-neutral-400">
-        
       </div>
       <div className="text-lg font-bold mb-2 relative z-10 px-10">
         <div
@@ -95,6 +97,9 @@ const Feature = ({
         className="text-sm text-neutral-600 dark:text-neutral-300 max-w-xs relative z-10 px-10">
         {description}
       </p>
+      <span className="text-lg font-bold text-neutral-600 dark:text-neutral-300 max-w-xs relative z-10 pt-3">
+      <a href="https://github.com/BlissMahlathi/Projects.git" target="_blank">{status}</a>
+      </span>
     </div>)
   );
 };
